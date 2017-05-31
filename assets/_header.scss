@@ -1,0 +1,25 @@
+header{
+	background:$CcherryColor ;
+	    padding: 20px 0px 10px 0px;
+	.logo{
+		text-align: left;
+		img{
+			@media only screen and (max-width:992px){
+				margin:0 auto;
+			}
+		}
+	}
+	.logo-text{
+		text-align: right;
+		@media only screen and (max-width:992px){
+			text-align: center;
+		}
+		h1{
+			font-family: 'Avenir LT Std 35 Light';
+			font-size: 48px;
+			text-transform: uppercase;
+			color: $whiteColor;
+			margin:20px 0px 0px 0px;
+		}
+	}
+}
