@@ -1,25 +1,54 @@
 header{
 	background:$CcherryColor ;
 	    padding: 20px 0px 10px 0px;
-	.logo{
-		text-align: left;
-		img{
-			@media only screen and (max-width:992px){
-				margin:0 auto;
+	.col-sm-6{
+		width:50%;
+		@media only screen and (max-width:480px){
+			width:100%;
+		}
+		&.logo{
+			text-align: left;
+			img{
+				@media only screen and (max-width:992px){
+					margin:0 auto;
+				}
 			}
 		}
-	}
-	.logo-text{
-		text-align: right;
-		@media only screen and (max-width:992px){
-			text-align: center;
+	}    
+	.col-sm-6{
+		width:50%;
+		@media only screen and (max-width:480px){
+			width:100%;
 		}
-		h1{
-			font-family: 'Avenir LT Std 35 Light';
-			font-size: 48px;
-			text-transform: uppercase;
-			color: $whiteColor;
-			margin:20px 0px 0px 0px;
+		&.logo-text{
+			text-align: right;
+			 @media only screen and (max-width:480px){
+			    text-align: center;
+		    }
+			h1{
+				font-family: 'Avenir LT Std 35 Light';
+				font-size: 48px;
+				text-transform: uppercase;
+				color: $whiteColor;
+				margin:20px 0px 0px 0px;
+				@media only screen and (max-width:1200px){
+			    	font-size: 44px;
+			    }
+			    @media only screen and (max-width:1024px){
+			    	font-size: 32px;
+			    	margin:30px 0px 0px 0px;
+			    }
+			    @media only screen and (max-width:767px){
+			    	font-size: 24px;
+			    	margin:40px 0px 0px 0px;
+			    }
+			    @media only screen and (max-width:580px){
+			    	font-size: 20px;
+			    }
+			    @media only screen and (max-width:480px){
+			    	font-size: 26px;
+			    }
+			}
 		}
 	}
 }
