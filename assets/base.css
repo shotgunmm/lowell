@@ -54,15 +54,11 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  background-color: #702D3F;
+  background-color: #464646;
   height: 100%;
   display: table;
   width: 100%;
   position: absolute; }
-  @media only screen and (max-width: 767px) {
-    .background-skin {
-      position: relative;
-      background-attachment: inherit; } }
   .background-skin .landing-page {
     display: table-cell;
     vertical-align: middle;
@@ -415,4 +411,4 @@ header {
 footer img {
   margin: 40px auto; }
 
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=base.css.map */

@@ -1,452 +1,463 @@
-.banner{
-	.banner-img{
-		width: 100%;
-	}
+.banner {
+    .banner-img {
+        width: 100%;
+    }
 }
-.background-skin{
-	background-image:url("../image/landing-background.jpg");
-      background-position: center center;
+
+.background-skin {
+    background-image: url("../image/landing-background.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-color: #464646;
+    background-color: #702D3F;
     height: 100%;
     display: table;
     width: 100%;
     position: absolute;
-    .landing-page{
-	    display: table-cell;
-	    vertical-align: middle;
-	    margin: 0 auto;
-    	.business-banking{
-    		text-align: right;
-    		max-width: 40%;
-    		float: right;
-    		@media only screen and (max-width:1200px){
-    			max-width: 50%;
-    		}
-    		@media only screen and (max-width:480px){
-    			max-width: 100%;
-    			float: none;
-    		}
-    		img{
-    			display: initial;
-    			@media only screen and (max-width:992px){
-    				width: 100%;
-    			}
-    		}
-    	}
-    	.personal-banking{
-    		max-width: 40%;
-    		@media only screen and (max-width:1200px){
-    			max-width: 50%;
-    		}
-    		@media only screen and (max-width:480px){
-    			max-width: 100%;
-    		}
-    		@media only screen and (max-width:992px){
-				text-align: center;
-			}
-    		img{
-	    		@media only screen and (max-width:992px){
-	    				width: 100%;
-	    		}	
-    		}
-    	}
-    	.landing-logo{
-    		text-align: center;
-    		img{
-    			display: initial;
-    			padding-top:63px;
-    		}
-    	}
-    	h1{
-    		font-size: 36px;
-    		text-align: center;
-    		font-family: 'Avenir LT Std 95 Black';
-    		color: $whiteColor;
-    		text-transform: uppercase;
-		    padding-bottom: 55px;
-		    @media only screen and (max-width:1200px){
-		    	font-size: 30px;
-		    }
-		    @media only screen and (max-width:940px){
-		    	font-size: 26px;
-		    }
-		    @media only screen and (max-width:640px){
-		    	font-size: 20px;
-		    	padding-bottom: 30px;
-		    }
-		    @media only screen and (max-width:480px){
-		    	font-size: 18px;
-		    }
-		    @media only screen and (max-width:480px){
-		    	font-size: 14px;
-		    }
-    	}
-    	a{
-    		button{
-	    		background:$btnColor;
-	    		color: $whiteColor;
-	    		border:1px solid $whiteColor;
-	    		padding:20px 22px;
-	    		font-family: 'Avenir LT Std 95 Black';
-	    		text-transform: uppercase;
-	    		font-size: 20px;
-	    		margin-top: 28px;
-	    		width: 100%;
-	    		@media only screen and (max-width:640px){
-	    			font-size: 14px;
-	    		}
-	    		@media only screen and (max-width:480px){
-	    			margin-bottom: 28px;
-	    		}		
-	    	}
-    	}
+    @media only screen and (max-width:767px) {
+        position:relative;
+        background-attachment: inherit;
+    }
+    .landing-page {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0 auto;
+        .business-banking {
+            text-align: right;
+            max-width: 40%;
+            float: right;
+            @media only screen and (max-width: 1200px) {
+                max-width: 50%;
+            }
+            @media only screen and (max-width:480px) {
+                max-width: 100%;
+                float: none;
+            }
+            img {
+                display: initial;
+                @media only screen and (max-width: 992px) {
+                    width: 100%;
+                }
+            }
+        }
+        .personal-banking {
+            max-width: 40%;
+            @media only screen and (max-width: 1200px) {
+                max-width: 50%;
+            }
+            @media only screen and (max-width:480px) {
+                max-width: 100%;
+            }
+            @media only screen and (max-width:992px) {
+                text-align: center;
+            }
+            img {
+                @media only screen and (max-width: 992px) {
+                    width: 100%;
+                }
+            }
+        }
+        .landing-logo {
+            text-align: center;
+            img {
+                display: initial;
+                padding-top: 63px;
+            }
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            font-family: 'Avenir LT Std 95 Black';
+            color: $whiteColor;
+            text-transform: uppercase;
+            padding-bottom: 55px;
+            @media only screen and (max-width: 1200px) {
+                font-size: 30px;
+            }
+            @media only screen and (max-width:940px) {
+                font-size: 26px;
+            }
+            @media only screen and (max-width:640px) {
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
+            @media only screen and (max-width:480px) {
+                font-size: 18px;
+            }
+            @media only screen and (max-width:480px) {
+                font-size: 14px;
+            }
+        }
+        a {
+            button {
+                background: $btnColor;
+                color: $whiteColor;
+                border: 1px solid $whiteColor;
+                padding: 20px 22px;
+                font-family: 'Avenir LT Std 95 Black';
+                text-transform: uppercase;
+                font-size: 20px;
+                margin-top: 28px;
+                width: 100%;
+                @media only screen and (max-width: 640px) {
+                    font-size: 14px;
+                }
+                @media only screen and (max-width:480px) {
+                    margin-bottom: 28px;
+                }
+            }
+        }
     }
 }
-.banner-text{
-	h1{
-		font-family: 'Avenir LT Std 35 Light';
-		font-size: 29px;
-		line-height: 40px;
-		color: $grayColor;
-		text-align: center;
-		padding:30px 0px 50px 0px;	
-		@media only screen and (max-width:1024px){
-			font-size: 26px;
-		}
-		@media only screen and (max-width:1024px){
-			font-size: 22px;
-			line-height: 30px;
-		}	
-		@media only screen and (max-width:1024px){
-			font-size: 20px;
-		}	
-	}
+
+.banner-text {
+    h1 {
+        font-family: 'Avenir LT Std 35 Light';
+        font-size: 29px;
+        line-height: 40px;
+        color: $grayColor;
+        text-align: center;
+        padding: 30px 0px 50px 0px;
+        @media only screen and (max-width: 1024px) {
+            font-size: 26px;
+        }
+        @media only screen and (max-width:1024px) {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @media only screen and (max-width:1024px) {
+            font-size: 20px;
+        }
+    }
 }
-.banner-btm{
-	background:$CcherryColor ;
-	padding:25px 0px;
-	.left-text{
-		text-align: left;
-		@media only screen and (max-width:767px){
-			text-align: center;
-		}
-		h1{
-			&.letf-text{
-				font-size: 30px;
-				font-family: 'Avenir LT Std 35 Light Oblique';
-				font-style: italic;
-				color: $whiteColor;
-				line-height: 40px;
-				margin:0px;
-				@media only screen and (max-width:1200px){
-					font-size: 18px;
-				}
-				@media only screen and (max-width:380px){
-					font-size: 14px;
-				}
-			}
-		}
-	}
-	.right-text{
-		text-align: right;
-		@media only screen and (max-width:767px){
-			text-align: center;
-		}
-		h1{
-			&.right-text{
-				font-size: 36px;
-				font-family: 'Avenir LT Std 95 Black';
-				color: $whiteColor;
-				margin:4px 0px;
-				@media only screen and (max-width:1200px){
-					font-size: 34px;
-				}
-				@media only screen and (max-width:1000px){
-					font-size: 28px;
-				}
-				@media only screen and (max-width:380px){
-					font-size: 22px;
-				}
-			}
-		}
-	}
+
+.banner-btm {
+    background: $CcherryColor;
+    padding: 25px 0px;
+    .left-text {
+        text-align: left;
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }
+        h1 {
+            &.letf-text {
+                font-size: 30px;
+                font-family: 'Avenir LT Std 35 Light Oblique';
+                font-style: italic;
+                color: $whiteColor;
+                line-height: 40px;
+                margin: 0px;
+                @media only screen and (max-width: 1200px) {
+                    font-size: 18px;
+                }
+                @media only screen and (max-width:380px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .right-text {
+        text-align: right;
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }
+        h1 {
+            &.right-text {
+                font-size: 36px;
+                font-family: 'Avenir LT Std 95 Black';
+                color: $whiteColor;
+                margin: 4px 0px;
+                @media only screen and (max-width: 1200px) {
+                    font-size: 34px;
+                }
+                @media only screen and (max-width:1000px) {
+                    font-size: 28px;
+                }
+                @media only screen and (max-width:380px) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
 }
-.open-account{
-		padding:70px 0px 90px 0px;
-	&.open-account-one{
-		padding:70px 0px 42px 0px;
-		.block-one{
-			&.lowel-text{
-				p{
-					font-size: 24px;
-					max-width: 100%;
-					@media only screen and (max-width:1024px){
-						font-size: 22px;
-					}
-					@media only screen and (max-width:1024px){
-						font-size: 20px;
-						line-height: 30px;
-					}	
-					@media only screen and (max-width:1024px){
-						font-size: 18px;
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (max-width:992px){
-		padding:50px 0px 50px 0px;
-	}
-	p{
-		&.long-text{
-			font-family: 'Avenir LT Std 35 Light';
-			font-size: 18px;
-			color: $grayColor;
-			line-height: 28px;
-			 @media only screen and (max-width:1024px){
-		    	font-size: 16px;
-		    }
-		}
-	}
-	.block-one{
-		text-align: center;
-		img{
-				width: 100%;
-		}
-		h1{
-			font-family: 'Avenir LT Std 95 Black';
-			font-size: 24px;
-			color: $grayColor;
-			text-align: left;
-			padding-bottom:8px;
-		}
-		p{
-			font-family: 'Avenir LT Std 45 Book';
-			font-size: 16px;
-			color: $grayColor;
-			text-align: left;
-			margin: 0 0 26px;
-		}
-		button{
-				background:$btnColor;
-				color: $whiteColor;
-				border:0 none;
-				font-family: 'Avenir LT Std 95 Black';
-				font-size: 20px;
-				text-transform: uppercase;
-				padding:12px 16px 10px 12px;
-				@media only screen and (max-width:992px){
-					margin-bottom: 30px;
-				}
-		}
-		&.lowel-text{
-			p{
-				max-width: 80%;
-				@media only screen and (max-width:992px){
-					max-width: 100%;
-				}
-			}
-		}
-	}
-	p{
-		&.small-text{
-			font-size: 14px;
-			font-family: 'Avenir LT Std 35 Light';
-			color: $grayColor;
-			text-align: right;	
-			padding:48px 0px 0px 0px;
-			@media only screen and (max-width:767px){
-				float: right;
-				font-size: 10px;
-				padding:10px 0px 0px 0px;
-			}
-		}
-	}
-	p{
-		&.checking-text{
-			font-size: 18px;
-			font-family: 'Avenir LT Std 35 Light';
-			color: $grayColor;
-			text-align: left;
-			padding-bottom:45px;
-		}
-	}
+
+.open-account {
+    padding: 70px 0px 90px 0px;
+    &.open-account-one {
+        padding: 70px 0px 42px 0px;
+        .block-one {
+            &.lowel-text {
+                p {
+                    font-size: 24px;
+                    max-width: 100%;
+                    @media only screen and (max-width: 1024px) {
+                        font-size: 22px;
+                    }
+                    @media only screen and (max-width:1024px) {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    @media only screen and (max-width:1024px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:992px) {
+        padding: 50px 0px 50px 0px;
+    }
+    p {
+        &.long-text {
+            font-family: 'Avenir LT Std 35 Light';
+            font-size: 18px;
+            color: $grayColor;
+            line-height: 28px;
+            @media only screen and (max-width: 1024px) {
+                font-size: 16px;
+            }
+        }
+    }
+    .block-one {
+        text-align: center;
+        img {
+            width: 100%;
+        }
+        h1 {
+            font-family: 'Avenir LT Std 95 Black';
+            font-size: 24px;
+            color: $grayColor;
+            text-align: left;
+            padding-bottom: 8px;
+        }
+        p {
+            font-family: 'Avenir LT Std 45 Book';
+            font-size: 16px;
+            color: $grayColor;
+            text-align: left;
+            margin: 0 0 26px;
+        }
+        button {
+            background: $btnColor;
+            color: $whiteColor;
+            border: 0 none;
+            font-family: 'Avenir LT Std 95 Black';
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 12px 16px 10px 12px;
+            @media only screen and (max-width: 992px) {
+                margin-bottom: 30px;
+            }
+        }
+        &.lowel-text {
+            p {
+                max-width: 80%;
+                @media only screen and (max-width: 992px) {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    p {
+        &.small-text {
+            font-size: 14px;
+            font-family: 'Avenir LT Std 35 Light';
+            color: $grayColor;
+            text-align: right;
+            padding: 48px 0px 0px 0px;
+            @media only screen and (max-width: 767px) {
+                float: right;
+                font-size: 10px;
+                padding: 10px 0px 0px 0px;
+            }
+        }
+    }
+    p {
+        &.checking-text {
+            font-size: 18px;
+            font-family: 'Avenir LT Std 35 Light';
+            color: $grayColor;
+            text-align: left;
+            padding-bottom: 45px;
+        }
+    }
 }
-.payment-section{
-	padding:70px 0px 65px 0px;
-	@media only screen and (max-width:992px){
-		padding:50px 0px 50px 0px;
-	}
-	p{
-		&.long-text{
-			font-family: 'Avenir LT Std 35 Light';
-			font-size: 18px;
-			color: $grayColor;
-			line-height: 28px;
-		}
-	}
-	.block-one{
-		h1{
-			font-family: 'Avenir LT Std 95 Black';
-			font-size: 24px;
-			color: $grayColor;
-			text-align: left;
-			padding-bottom:10px;
-			margin: 0px;
-		}
-		p{
-			font-family: 'Avenir LT Std 35 Light';
-			font-size: 16px;
-			color: $grayColor;
-			text-align: left;
-			margin: 0 0 26px;
-			max-width: 86%;
-			@media only screen and (max-width:992px){
-				max-width: 100%;				
-			}
-		}
-	}
+
+.payment-section {
+    padding: 70px 0px 65px 0px;
+    @media only screen and (max-width: 992px) {
+        padding: 50px 0px 50px 0px;
+    }
+    p {
+        &.long-text {
+            font-family: 'Avenir LT Std 35 Light';
+            font-size: 18px;
+            color: $grayColor;
+            line-height: 28px;
+        }
+    }
+    .block-one {
+        h1 {
+            font-family: 'Avenir LT Std 95 Black';
+            font-size: 24px;
+            color: $grayColor;
+            text-align: left;
+            padding-bottom: 10px;
+            margin: 0px;
+        }
+        p {
+            font-family: 'Avenir LT Std 35 Light';
+            font-size: 16px;
+            color: $grayColor;
+            text-align: left;
+            margin: 0 0 26px;
+            max-width: 86%;
+            @media only screen and (max-width: 992px) {
+                max-width: 100%;
+            }
+        }
+    }
 }
-.loan-section{
-	padding:70px 0px 90px 0px;
-	@media only screen and (max-width:992px){
-		padding:50px 0px 50px 0px;
-	}
-	.loan-padding{
-		padding:0px 0px 60px 0px;
-		.right-text{
-			text-align: right;
-			@media only screen and (max-width:767px){
-				text-align: center;
-			}
-		}
-	}
-	p{
-		&.long-text{
-			font-family: 'Avenir LT Std 35 Light';
-			font-size: 18px;
-			color: $grayColor;
-			line-height: 28px;
-		}
-	}
-	.block-one{
-		h1{
-			font-family: 'Avenir LT Std 45 Book';
-			font-size: 24px;
-			color: $grayColor;
-			text-align: left;
-			padding-bottom:8px;
-			&:first-child{
-				margin-top: 0px;
-			}
-		}
-		p{
-			font-family: 'AvenirLTStd-Book';
-			font-size: 16px;
-			color: $grayColor;
-			text-align: left;
-			margin: 0 0 26px;
-		}
-	}
-	button{
-		&.apply-btn{
-			background: $btnColor;
-		    color: $whiteColor;
-		    border: 0 none;
-		    font-family: 'Avenir LT Std 95 Black';
-		    font-size: 20px;
-		    text-transform: uppercase;
-		    padding: 15px 0px;
-		    width: 100%;
-		    max-width:220px;
-		    margin-top: 20px;
-		    @media only screen and (max-width:992px){
-		    	margin-bottom: 30px;
-		    }
-		}
-	}
-	.loan-types{
-		.col-xs-6{
-			@media only screen and (max-width:480px){
-				width: 100%;
-			}
-			img{
-					@media only screen and (max-width:480px){
-					width: 100%;
-				}	
-			}
-		}
-		img{
-			@media only screen and (max-width:992px){
-				margin:0 auto;
-			}
-		}
-		h1{
-			font-family: 'Avenir LT Std 95 Black';
-		    font-size: 18px;
-		    text-align: center;
-		    color: $grayColor;
-	        line-height: 22px;
-	        @media only screen and (max-width:480px){
-	        	padding:0px 0px 20px 0px;
-	        }
-	        br{
-	        	display: block;
-	        	@media only screen and (max-width:480px){
-		     		display: none;
-		        }	
-	        }
-		}
-	}
+
+.loan-section {
+    padding: 70px 0px 90px 0px;
+    @media only screen and (max-width: 992px) {
+        padding: 50px 0px 50px 0px;
+    }
+    .loan-padding {
+        padding: 0px 0px 60px 0px;
+        .right-text {
+            text-align: right;
+            @media only screen and (max-width: 767px) {
+                text-align: center;
+            }
+        }
+    }
+    p {
+        &.long-text {
+            font-family: 'Avenir LT Std 35 Light';
+            font-size: 18px;
+            color: $grayColor;
+            line-height: 28px;
+        }
+    }
+    .block-one {
+        h1 {
+            font-family: 'Avenir LT Std 45 Book';
+            font-size: 24px;
+            color: $grayColor;
+            text-align: left;
+            padding-bottom: 8px;
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+        p {
+            font-family: 'AvenirLTStd-Book';
+            font-size: 16px;
+            color: $grayColor;
+            text-align: left;
+            margin: 0 0 26px;
+        }
+    }
+    button {
+        &.apply-btn {
+            background: $btnColor;
+            color: $whiteColor;
+            border: 0 none;
+            font-family: 'Avenir LT Std 95 Black';
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 15px 0px;
+            width: 100%;
+            max-width: 220px;
+            margin-top: 20px;
+            @media only screen and (max-width: 992px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .loan-types {
+        .col-xs-6 {
+            @media only screen and (max-width: 480px) {
+                width: 100%;
+            }
+            img {
+                @media only screen and (max-width: 480px) {
+                    width: 100%;
+                }
+            }
+        }
+        img {
+            @media only screen and (max-width: 992px) {
+                margin: 0 auto;
+            }
+        }
+        h1 {
+            font-family: 'Avenir LT Std 95 Black';
+            font-size: 18px;
+            text-align: center;
+            color: $grayColor;
+            line-height: 22px;
+            @media only screen and (max-width: 480px) {
+                padding: 0px 0px 20px 0px;
+            }
+            br {
+                display: block;
+                @media only screen and (max-width: 480px) {
+                    display: none;
+                }
+            }
+        }
+    }
 }
-.contact-section{
-	padding:70px 0px 130px 0px;
-	@media only screen and (max-width:992px){
-		padding:50px 0px 50px 0px;
-	}
-	p{
-		&.letf-text{
-		    font-family: 'Avenir LT Std 35 Light';
-		    font-size: 18px;
-		    color: #66666e;
-		    line-height: 28px;
-		}
-	}
-	form{
-		.form-group{
-			label{
-				font-size: 16px;
-				font-family: 'Avenir LT Std 35 Light';
-				text-transform: uppercase;
-				color: $grayColor;
-				font-weight: 500;
-			}
-			.form-control{
-				  background-color: $formColor;
-				  background-image: none;
-				  border: 2px solid $grayColor;
-				  border-radius: 0px;
-				  -webkit-box-shadow: 0;
-				  box-shadow: 0;
-				  height: 55px;
-				  font-size: 16px;
-				  font-family: 'Avenir LT Std 35 Light';
-			}
-		}
-		button{
-			&.submit{
-				background: $btnColor;
-			    color: $whiteColor;
-			    border: 0 none;
-			    font-family: 'Avenir LT Std 95 Black';
-			    font-size: 20px;
-			    text-transform: uppercase;
-			    padding: 14px 30px 14px 30px;
-			    margin-top: 30px;
-			}
-		}
-	}
+
+.contact-section {
+    padding: 70px 0px 130px 0px;
+    @media only screen and (max-width: 992px) {
+        padding: 50px 0px 50px 0px;
+    }
+    p {
+        &.letf-text {
+            font-family: 'Avenir LT Std 35 Light';
+            font-size: 18px;
+            color: #66666e;
+            line-height: 28px;
+        }
+    }
+    form {
+        .form-group {
+            label {
+                font-size: 16px;
+                font-family: 'Avenir LT Std 35 Light';
+                text-transform: uppercase;
+                color: $grayColor;
+                font-weight: 500;
+            }
+            .form-control {
+                background-color: $formColor;
+                background-image: none;
+                border: 2px solid $grayColor;
+                border-radius: 0px;
+                -webkit-box-shadow: 0;
+                box-shadow: 0;
+                height: 55px;
+                font-size: 16px;
+                font-family: 'Avenir LT Std 35 Light';
+            }
+        }
+        button {
+            &.submit {
+                background: $btnColor;
+                color: $whiteColor;
+                border: 0 none;
+                font-family: 'Avenir LT Std 95 Black';
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 14px 30px 14px 30px;
+                margin-top: 30px;
+            }
+        }
+    }
 }
