@@ -67,13 +67,17 @@
   				<img src="image/img-1.jpg" class="img-responsive">
   				<h1>All Business</h1>
   				<p>Designed for businesses that want free checking with no minimum balance, no transaction limits and  no monthly fees.</p>
-  				<button type="button">open account</button>
+          <a href=" https://www.lowellfive.com/business/banking/checking/open-a-new-business-checking-account/" target="_blank">
+    				<button type="button">open account</button>
+          </a>  
   			</div>
   			<div class="col-sm-4 col-xs-12 block-one">
   				<img src="image/img-2.jpg" class="img-responsive">
   				<h1>All Business Plus</h1>
   				<p>Designed for businesses that maintain an account balance of $10,000 and want to earn interest. Earn interest on all of your funds in one account.</p>
-  				<button type="button">open account</button>
+          <a href=" https://www.lowellfive.com/business/banking/checking/open-a-new-business-checking-account/" target="_blank">
+    				<button type="button">open account</button>
+          </a>  
   			</div>
   		</div>
   	</div>
@@ -94,7 +98,7 @@
   	<div class="container">
   		<div class="row">
   			<div class="col-sm-4 col-xs-12">
-  				<p class="long-text">The Lowell Five business banking team has the expertise and financial products to help make things happen for your company. Our cash management tools increase your company’s ability to respond nimbly to opportunity, and reduce the time and expense of daily financial tasks.</p>
+  				<p class="long-text">The Lowell Five business banking team has the expertise and financial products to help make things happen for your company. Our cash management tools increase your company’s ability to respond quickly to opportunity, and reduce the time and expense of daily financial tasks.</p>
   			</div>
   			<div class="col-sm-4 col-xs-12 block-one text-center">
   				<h1>ACH/Cash Concentration</h1>
@@ -136,7 +140,9 @@
   				<p class="long-text">Considering an expansion, or streamlining your cash flow? The Lowell Five business banking team knows our regional market, and we offer commercial real estate and construction loans, lines of credit and term loans for businesses of every size. At 160 years old and counting, Lowell Five understands how to build things that last. Apply online or call for more information: 978-452-1300.</p>
   			</div>
   			<div class="col-sm-3 col-xs-12 right-text">
-  				<button type="button" class="apply-btn">APPLY FOR A BUSINESS LOAN</button>
+          <a href=" https://www.lowellfive.com/business/commercial-loans/apply-for-a-business-loan/" target="_blank">
+    				<button type="button" class="apply-btn">APPLY FOR A BUSINESS LOAN</button>
+          </a>  
   			</div>
   		</div>
   		<div class="row loan-types">
@@ -186,7 +192,7 @@
   				<p class="letf-text">For more information or for personal assistance in opening your business account, please complete this secure form. A Lowell Five business banking specialist will contact you shortly. We value your privacy, and will never share your information. </p>
   			</div>
   			<div class="col-sm-8 col-xs-12">
-  				<form>
+  				<form id="contact-form">
 				  <div class="form-group">
 				    <label for="fname">first name</label>
 				    <input type="text" class="form-control" id="fname">
@@ -205,9 +211,11 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="email">email</label>
-				    <input type="email" class="form-control" id="email">
-				  </div>
-				  <button type="button" class="submit">learn more</button>
+				    <input type="email" class="form-control" id="email" required="required" />
+            <p class="error email-error"></p>
+          </div>
+          <input type="hidden" class="page-name" value="Business">
+          <button type="submit" class="submit submit-form">learn more</button>
 				</form>
   			</div>
   		</div>
@@ -217,13 +225,32 @@
   	 <div class="container">
   	 	<div class="row">
   	 		<div class="col-md-12">
-  	 			<img src="image/foot-logo.png" class="img-responsive">
+  	 			  <a href="landing-page.html">
+              <img src="image/foot-logo.png" class="img-responsive">
+            </a>  
   	 			<img src="image/foot-logos.png" class="img-responsive">
   	 		</div>
   	 	</div>
   	 </div>
   </footer>
 
+   <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Your message has been sent successfully.<br>  Thanks for your interest.</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+      
+    </div>
 	
 
 
@@ -241,6 +268,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>

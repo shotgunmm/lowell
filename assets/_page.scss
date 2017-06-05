@@ -61,8 +61,10 @@
         .landing-logo {
             text-align: center;
             img {
-                display: initial;
-                padding-top: 63px;
+                display: block;
+                padding-top: 10px 0px 10px 0px;
+                margin: 14px auto;
+                max-width: 30%;
             }
         }
         h1 {
@@ -100,11 +102,16 @@
                 font-size: 20px;
                 margin-top: 28px;
                 width: 100%;
+                position:relative;
+                z-index: 44444;
                 @media only screen and (max-width: 640px) {
                     font-size: 14px;
                 }
                 @media only screen and (max-width:480px) {
                     margin-bottom: 28px;
+                }
+                &:hover{
+                	background: $hoverColor;
                 }
             }
         }
@@ -183,6 +190,9 @@
 }
 
 .open-account {
+    &.open-account-p{
+        padding: 70px 0px 42px 0px;    
+    }
     padding: 70px 0px 90px 0px;
     &.open-account-one {
         padding: 70px 0px 42px 0px;
@@ -248,6 +258,9 @@
             padding: 12px 16px 10px 12px;
             @media only screen and (max-width: 992px) {
                 margin-bottom: 30px;
+            }
+            &:hover{
+            	background:$hoverColor;
             }
         }
         &.lowel-text {
@@ -376,6 +389,9 @@
             @media only screen and (max-width: 992px) {
                 margin-bottom: 30px;
             }
+            &:hover{
+            	background:$hoverColor;
+            }
         }
     }
     .loan-types {
@@ -383,11 +399,11 @@
             @media only screen and (max-width: 480px) {
                 width: 100%;
             }
-            img {
+         /*    img {
                 @media only screen and (max-width: 480px) {
                     width: 100%;
                 }
-            }
+            } */
         }
         img {
             @media only screen and (max-width: 992px) {
@@ -446,6 +462,14 @@
                 font-size: 16px;
                 font-family: 'Avenir LT Std 35 Light';
             }
+            p{
+                padding:10px 0 0 0;
+                &.error,&.mail-error{
+                    color: $warningAlert;
+                    font-size: 14px;
+                    font-family: 'Avenir LT Std 35 Light';
+                }
+            }
         }
         button {
             &.submit {
@@ -457,6 +481,9 @@
                 text-transform: uppercase;
                 padding: 14px 30px 14px 30px;
                 margin-top: 30px;
+                &:hover{
+                	background:$hoverColor;
+                }
             }
         }
     }

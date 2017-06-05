@@ -61,13 +61,13 @@
     <div class="container">
       <div class="row">
       <div class="col-sm-4 col-xs-12 block-one lowel-text">
-          <p>Lowell Five looks out for you, whether you’re in the neighborhood or away for work or vacation. With a Convenience or Premier Checking account, we will reimburse you for ATM fees charged by other banks, nationwide.**</p>
+          <p>Lowell Five looks out for you, whether you’re in the neighborhood or away for work or vacation. With a Convenience or Premier Checking account, we will reimburse you for ATM fees charged by other banks, nationwide.*</p>
         </div>
         <div class="col-sm-8 col-xs-12 block-one">
           <img src="image/atm-machine.jpg" class="img-responsive">
         </div>
         <div class="col-sm-12">
-          <p class="small-text">** Total refund per account is limited to $15 per statement cycle for Convenience Checking and $50 per statement cycle for Premier Checking.</p>
+          <p class="small-text">* Total refund per account is limited to $15 per statement cycle for Convenience Checking and $50 per statement cycle for Premier Checking.</p>
          </div> 
       </div>
     </div>  
@@ -88,7 +88,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-xs-12">
-          <p class="long-text">Enjoy the security and convenience of Lowell Five’s eBanking services.  With Online Banking you can check balances, pay bills, and receive your Lowell Five makes your day better with mobile banking services that make life easier. Secure and convenient, mobile banking means you can check balances, pay bills, transfer funds, and more, whether you’re on lunch break, in line at the store, at work, or at home. Just download the app and start banking wherever you are. .  To enroll in online banking visit the login page on LowellFive.com to apply, then download the mobile banking app on your mobile device to start using eBanking today.</p>
+          <p class="long-text">Lowell Five makes your day better with mobile banking services that make life easier. Secure and convenient, mobile banking means you can check balances, pay bills, transfer funds and more, whether you’re on lunch break, in line at the store, at work or at home. Just download the app and start banking wherever you are. </p>
         </div>
         <div class="col-sm-4 col-xs-12 block-one text-center">
           <h1>Mobile Deposit</h1>
@@ -99,7 +99,7 @@
           <p>Send and receive person-to-person (POP) payments easily via email and/or text. No cash? Split the check, no fuss.</p>
         </div>
         <div class="col-sm-4 col-xs-12 block-one text-center">
-          <h1>eStatements, eBills<br> & Check Images</h1>
+          <h1>eStatements, eBills<br> and Check Images</h1>
           <p>Don’t clutter your space with paper bills and statements. eStatements, eBills and check images provide secure data in a convenient, eco-friendly, no-dusting-required way. </p>
           <h1>Bill Pay</h1>
           <p>Skip the stamps and pay your monthly bills from your phone or tablet. Simple online set-up, and optional transfer to other banks for fast, easy payments. </p>
@@ -122,7 +122,7 @@
   			</div>
   		</div>
   </section>
-   <section class="open-account">
+   <section class="open-account open-account-p">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -132,20 +132,30 @@
           <img src="image/img-9.jpg" class="img-responsive">
           <h1>Classic Checking</h1>
           <p>Perfect for people who want a simple, technology-forward, no-minimum account with all the convenience of mobile and online banking, debit card, online bill pay and free Lowell Five ATM use. It’s classic Lowell Five!</p>
-          <button type="button">open account</button>
+          <a href=" https://www.lowellfive.com/personal/checking/apply-online-personal-checking-account/">
+            <button type="button">open account</button>
+          </a>  
         </div>
         <div class="col-sm-4 col-xs-12 block-one">
           <img src="image/img-10.jpg" class="img-responsive">
           <h1>Convenience Checking</h1>
-          <p>Want the convenience of using any ATM in the U.S. and having us reimburse your fees? Convenience Checking is for you. Enjoy a full suite of mobile and online banking and bill-pay features, as well as optional overdraft protection.</p>
-          <button type="button">open account</button>
+          <p>Want the convenience of using any ATM in the U.S. and having us reimburse your fees?* Convenience Checking is for you. Enjoy a full suite of mobile and online banking and bill-pay features, as well as optional overdraft protection.</p>
+          <a href=" https://www.lowellfive.com/personal/checking/apply-online-personal-checking-account/">
+            <button type="button">open account</button>
+          </a>  
         </div>
         <div class="col-sm-4 col-xs-12 block-one">
           <img src="image/img-11.jpg" class="img-responsive">
           <h1>Premier Checking</h1>
-          <p>With full online and mobile banking options, including mobile deposits, and ATM fee reimbursement nationwide, the interest-bearing Premier Checking account makes the most of your money and your time. </p>
-          <button type="button">open account</button>
+          <p>With full online and mobile banking options, including mobile deposits, and ATM fee reimbursement nationwide*, the interest-bearing Premier Checking account makes the most of your money and your time.</p>
+          <a href=" https://www.lowellfive.com/personal/checking/apply-online-personal-checking-account/">
+            <button type="button">open account</button>
+          </a>  
         </div>
+         <div class="col-sm-12">
+          <p class="small-text">* Total refund per account is limited to $15 per statement cycle for Convenience Checking and $50 per statement cycle for Premier Checking.</p>
+         </div> 
+      </div>
       </div>
     </div>
   </section>
@@ -168,7 +178,7 @@
   				<p class="letf-text">For more information or to start enjoying the benefits of a real banking relationship, please let us know how to get in touch. One of our helpful, friendly representatives will contact you shortly. At Lowell Five, we start our relationship right by never sharing your personal information. We value your privacy!  </p>
   			</div>
   			<div class="col-sm-8 col-xs-12">
-  				<form>
+  				<form id="contact-form">
 				  <div class="form-group">
 				    <label for="fname">first name</label>
 				    <input type="text" class="form-control" id="fname">
@@ -183,9 +193,11 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="email">email</label>
-				    <input type="email" class="form-control" id="email">
+				    <input type="email" class="form-control" id="email" required="required" />
+            <p class="error email-error"></p>
 				  </div>
-				  <button type="button" class="submit">learn more</button>
+				  <input type="hidden" class="page-name" value="Personal">
+				  <button type="submit" class="submit">learn more</button>
 				</form>
   			</div>
   		</div>
@@ -195,14 +207,31 @@
   	 <div class="container">
   	 	<div class="row">
   	 		<div class="col-md-12">
-  	 			<img src="image/foot-logo.png" class="img-responsive">
+  	 			  <a href="landing-page.html">
+               <img src="image/foot-logo.png" class="img-responsive">
+            </a>
   	 			<img src="image/foot-logos.png" class="img-responsive">
   	 		</div>
   	 	</div>
   	 </div>
   </footer>
 
-	
+	<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Your message has been sent successfully.<br>  Thanks for your interest.</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+      </div>
+    </div>
 
 
 
@@ -219,6 +248,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
